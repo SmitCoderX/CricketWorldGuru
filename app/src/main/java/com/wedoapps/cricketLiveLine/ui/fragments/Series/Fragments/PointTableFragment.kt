@@ -8,8 +8,8 @@ import android.text.TextUtils
 import android.util.Log
 import android.view.View
 import androidx.fragment.app.Fragment
-import com.seriespanel.model.PointTableModel
-import com.seriespanel.model.SeriesModel
+import com.wedoapps.cricketLiveLine.model.Series.PointTableModel
+import com.wedoapps.cricketLiveLine.model.Series.SeriesModel
 import com.wedoapps.cricketLiveLine.R
 import com.wedoapps.cricketLiveLine.adapter.PointsTableRecyclerAdapter
 import com.wedoapps.cricketLiveLine.databinding.FragmentPointTableBinding

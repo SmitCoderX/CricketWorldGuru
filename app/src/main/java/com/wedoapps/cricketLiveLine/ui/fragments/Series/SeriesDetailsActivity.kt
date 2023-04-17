@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.ViewModelProvider
 import com.google.android.material.tabs.TabLayoutMediator
-import com.seriespanel.model.SeriesModel
+import com.wedoapps.cricketLiveLine.model.Series.SeriesModel
 import com.wedoapps.cricketLiveLine.BuildConfig
 import com.wedoapps.cricketLiveLine.R
 import com.wedoapps.cricketLiveLine.adapter.ViewPagerAdapter

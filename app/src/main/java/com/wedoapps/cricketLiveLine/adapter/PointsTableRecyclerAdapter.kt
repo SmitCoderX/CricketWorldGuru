@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.storage.FirebaseStorage
-import com.seriespanel.model.PointTableModel
+import com.wedoapps.cricketLiveLine.model.Series.PointTableModel
 import com.wedoapps.cricketLiveLine.R
 import com.wedoapps.cricketLiveLine.databinding.HeaderPointTableBinding
 import com.wedoapps.cricketLiveLine.databinding.LayoutPointsTableBinding

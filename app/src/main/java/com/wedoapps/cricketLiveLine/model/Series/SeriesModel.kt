@@ -1,9 +1,10 @@
-package com.seriespanel.model
+package com.wedoapps.cricketLiveLine.model.Series
 
 import android.os.Parcelable
 import com.google.firebase.database.PropertyName
 import com.google.gson.annotations.Expose
 import com.wedoapps.cricketLiveLine.model.Series.MatchModel
+import com.wedoapps.cricketLiveLine.model.Series.PointTableModel
 import kotlinx.parcelize.Parcelize
 
 @Parcelize

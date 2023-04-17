@@ -12,8 +12,8 @@ import com.google.firebase.firestore.Query
 import com.google.firebase.storage.FirebaseStorage
 import com.google.gson.JsonObject
 import com.wedoapps.cricketLiveLine.model.Series.MatchModel
-import com.seriespanel.model.PointTableModel
-import com.seriespanel.model.SeriesModel
+import com.wedoapps.cricketLiveLine.model.Series.PointTableModel
+import com.wedoapps.cricketLiveLine.model.Series.SeriesModel
 import com.wedoapps.cricketLiveLine.db.CricketGuruDatabase
 import com.wedoapps.cricketLiveLine.model.*
 import com.wedoapps.cricketLiveLine.model.info.Info

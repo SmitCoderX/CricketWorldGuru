@@ -2,19 +2,13 @@ package com.wedoapps.cricketLiveLine.ui.fragments.home
 
 import android.annotation.SuppressLint
 import android.content.Context
-import android.content.Context.MODE_PRIVATE
 import android.content.Intent
-import android.graphics.Bitmap
-import android.graphics.BitmapFactory
-import android.graphics.drawable.BitmapDrawable
 import android.os.Bundle
-import android.text.TextUtils
 import android.util.Log
 import android.view.View
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.PagerSnapHelper
-import com.seriespanel.model.SeriesModel
+import com.wedoapps.cricketLiveLine.model.Series.SeriesModel
 import com.wedoapps.cricketLiveLine.R
 import com.wedoapps.cricketLiveLine.adapter.HomeCardAdapter
 import com.wedoapps.cricketLiveLine.adapter.TrendingSeriesAdapter
@@ -24,18 +18,10 @@ import com.wedoapps.cricketLiveLine.ui.CricketGuruViewModel
 import com.wedoapps.cricketLiveLine.ui.MainActivity
 import com.wedoapps.cricketLiveLine.ui.fragments.Series.SeriesDetailsActivity
 import com.wedoapps.cricketLiveLine.ui.fragments.singleMatch.ViewPagerActivity
-import com.wedoapps.cricketLiveLine.utils.Constants
 import com.wedoapps.cricketLiveLine.utils.Constants.SERIES_DATA
 import com.wedoapps.cricketLiveLine.utils.Constants.TAG
-import com.wedoapps.cricketLiveLine.utils.Constants.alertDialogAdsFilePath
-import com.wedoapps.cricketLiveLine.utils.Constants.bannerAdsFilePath
-import com.wedoapps.cricketLiveLine.utils.Constants.isAdsVisible
 import com.wedoapps.cricketLiveLine.utils.PreferenceManager
 import com.wedoapps.cricketLiveLine.utils.ReusedMethod
-import com.wedoapps.cricketLiveLine.utils.ShowLogToast
-import java.io.File
-import java.io.FileOutputStream
-import java.io.IOException
 
 
 class HomeFragment : Fragment(R.layout.fragment_home), HomeCardAdapter.SetOnClick,

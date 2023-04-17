@@ -1,4 +1,4 @@
-package com.seriespanel.model
+package com.wedoapps.cricketLiveLine.model.Series
 
 import android.os.Parcel
 import android.os.Parcelable

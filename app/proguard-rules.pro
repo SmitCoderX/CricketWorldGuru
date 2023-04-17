@@ -41,6 +41,9 @@
 -keep public class com.wedoapps.cricketLiveLine.model.* { *; }
 -keep public class com.wedoapps.cricketLiveLine.model.matchBet.* { *; }
 -keep public class com.wedoapps.cricketLiveLine.model.Series.* { *; }
+-keep public class com.wedoapps.cricketLiveLine.model.Series.MatchModel { *; }
+-keep public class com.wedoapps.cricketLiveLine.model.Series.PointTableModel { *; }
+-keep public class com.wedoapps.cricketLiveLine.model.Series.SeriesModel { *; }
 -keep public class com.wedoapps.cricketLiveLine.model.sessionBet.* { *; }
 -keep public class * implements com.bumptech.glide.module.GlideModule
 -keep public class * extends com.bumptech.glide.AppGlideModule.*

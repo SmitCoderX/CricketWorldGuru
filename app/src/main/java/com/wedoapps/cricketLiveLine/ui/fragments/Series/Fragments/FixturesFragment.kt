@@ -11,7 +11,7 @@ import android.util.Log
 import android.view.View
 import androidx.fragment.app.Fragment
 import com.wedoapps.cricketLiveLine.model.Series.MatchModel
-import com.seriespanel.model.SeriesModel
+import com.wedoapps.cricketLiveLine.model.Series.SeriesModel
 import com.wedoapps.cricketLiveLine.R
 import com.wedoapps.cricketLiveLine.adapter.FixtureAdapter
 import com.wedoapps.cricketLiveLine.databinding.FragmentFixturesBinding

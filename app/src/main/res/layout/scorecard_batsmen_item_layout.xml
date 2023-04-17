@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:layout_weight="6"
+    android:background="@drawable/trans_round_rect_border"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="@dimen/_45sdp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_batsman_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoSizeMaxTextSize="@dimen/_14ssp"
+            android:autoSizeMinTextSize="@dimen/_10ssp"
+            android:autoSizeStepGranularity="@dimen/_2ssp"
+            android:autoSizeTextType="uniform"
+            android:layout_gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:fontFamily="@font/montserrat_regular"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text="@string/test_name"
+            android:textColor="@color/white"
+            tools:targetApi="o" />
+
+        <TextView
+            android:id="@+id/tv_batsman_out"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoSizeMaxTextSize="@dimen/_9ssp"
+            android:autoSizeMinTextSize="@dimen/_7ssp"
+            android:autoSizeStepGranularity="@dimen/_2ssp"
+            android:autoSizeTextType="uniform"
+            android:layout_gravity="center"
+            android:includeFontPadding="false"
+            android:gravity="center_vertical"
+            android:fontFamily="@font/montserrat_regular"
+            android:maxLines="1"
+            android:text="@string/test_name"
+            android:textColor="@color/white"
+            tools:targetApi="o" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_first_run"
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".7"
+        android:autoSizeMaxTextSize="@dimen/_11ssp"
+        android:autoSizeMinTextSize="@dimen/_9ssp"
+        android:autoSizeStepGranularity="@dimen/_2ssp"
+        android:includeFontPadding="false"
+        android:autoSizeTextType="uniform"
+        android:text="@string/_3"
+        android:fontFamily="@font/montserrat_regular"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        tools:targetApi="o" />
+
+    <TextView
+        android:id="@+id/tv_first_balls"
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_regular"
+        android:layout_weight=".5"
+        android:includeFontPadding="false"
+        android:autoSizeMaxTextSize="@dimen/_11ssp"
+        android:autoSizeMinTextSize="@dimen/_9ssp"
+        android:autoSizeStepGranularity="@dimen/_2ssp"
+        android:autoSizeTextType="uniform"
+
+        android:text="@string/_3"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        tools:targetApi="o" />
+
+    <TextView
+        android:id="@+id/tv_first_4s"
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".5"
+        android:autoSizeMaxTextSize="@dimen/_11ssp"
+        android:autoSizeMinTextSize="@dimen/_9ssp"
+        android:autoSizeStepGranularity="@dimen/_2ssp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="@string/_3"
+        android:textAlignment="center"
+        android:includeFontPadding="false"
+        android:textColor="@color/white"
+        tools:targetApi="o" />
+
+    <TextView
+        android:id="@+id/tv_first_6s"
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".5"
+        android:autoSizeMaxTextSize="@dimen/_11ssp"
+        android:autoSizeMinTextSize="@dimen/_9ssp"
+        android:autoSizeStepGranularity="@dimen/_2ssp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="@string/_3"
+        android:includeFontPadding="false"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        tools:targetApi="o" />
+
+    <TextView
+        android:id="@+id/tv_first_strike_rate"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".7"
+        android:autoSizeMaxTextSize="@dimen/_11ssp"
+        android:autoSizeMinTextSize="@dimen/_9ssp"
+        android:autoSizeStepGranularity="@dimen/_2ssp"
+        android:includeFontPadding="false"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="@string/_3"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        tools:targetApi="o" />
+
+</LinearLayout>

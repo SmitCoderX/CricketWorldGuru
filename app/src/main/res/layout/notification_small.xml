@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/imgSmallNotification"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_2sdp"
+        android:contentDescription="@string/app_name"
+        android:src="@mipmap/ic_launcher"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txtNotificationTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="notification"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="@color/purple_500"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txtNotificationMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Notification Message"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="@color/purple_500"/>
+
+    </LinearLayout>
+
+</LinearLayout>

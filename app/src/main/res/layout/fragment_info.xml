@@ -1,0 +1,835 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_image"
+    tools:context=".ui.fragments.singleMatch.pagerFragments.InfoFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/info_team1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/round_rect"
+            android:backgroundTint="@color/purple_500"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tv_info_team1Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="@string/team_first"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                tools:targetApi="o" />
+
+            <ImageView
+                android:id="@+id/iv_info_team1Arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:contentDescription="@string/scorecard"
+                android:src="@drawable/ic_down_arrow"
+                app:tint="@color/white" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_playerList1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:nestedScrollingEnabled="false"
+            android:overScrollMode="never"
+            android:visibility="gone"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/info_team1"
+            tools:listitem="@layout/rv_player_item_layout" />
+
+        <LinearLayout
+            android:id="@+id/info_team2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/round_rect"
+            android:backgroundTint="@color/purple_500"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rv_playerList1">
+
+            <TextView
+                android:id="@+id/tv_info_team2Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="@string/team_first"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                tools:targetApi="o" />
+
+            <ImageView
+                android:id="@+id/iv_info_team2Arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:contentDescription="@string/scorecard"
+                android:src="@drawable/ic_down_arrow"
+                app:tint="@color/white" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_noSquade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/there_are_no_squads"
+            android:textColor="@color/white"
+            android:fontFamily="@font/montserrat_medium"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView13"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_playerList2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:nestedScrollingEnabled="false"
+            android:overScrollMode="never"
+            android:visibility="gone"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/info_team2" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/venue"
+            android:textColor="@color/white"
+            android:textSize="19sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rv_playerList2" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            app:cardBackgroundColor="@color/lblue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView13">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_title_series"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:autoSizeMaxTextSize="13sp"
+                        android:autoSizeMinTextSize="11sp"
+                        android:autoSizeStepGranularity="2sp"
+                        android:autoSizeTextType="uniform"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="@string/series"
+                        android:textColor="@color/black"
+                        tools:targetApi="o" />
+
+                    <TextView
+                        android:id="@+id/tv_title_match"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:autoSizeMaxTextSize="13sp"
+                        android:autoSizeMinTextSize="11sp"
+                        android:autoSizeStepGranularity="2sp"
+                        android:autoSizeTextType="uniform"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="@string/match"
+                        android:textColor="@color/black"
+                        tools:targetApi="o" />
+
+                    <TextView
+                        android:id="@+id/tv_title_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:autoSizeMaxTextSize="13sp"
+                        android:autoSizeMinTextSize="11sp"
+                        android:autoSizeStepGranularity="2sp"
+                        android:autoSizeTextType="uniform"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="@string/date_amp_time"
+                        android:textColor="@color/black"
+                        tools:targetApi="o" />
+
+                    <TextView
+                        android:id="@+id/tv_title_venue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:autoSizeMaxTextSize="13sp"
+                        android:autoSizeMinTextSize="11sp"
+                        android:autoSizeStepGranularity="2sp"
+                        android:autoSizeTextType="uniform"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="@string/venue"
+                        android:textColor="@color/black"
+                        tools:targetApi="o" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_series"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:autoSizeMaxTextSize="11sp"
+                        android:autoSizeMinTextSize="9sp"
+                        android:autoSizeStepGranularity="2sp"
+                        android:autoSizeTextType="uniform"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/black"
+                        tools:targetApi="o"
+                        android:gravity="center_vertical"
+                        tools:text="Caribbean Premier League 2021" />
+
+
+                    <TextView
+                        android:id="@+id/tv_match"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:autoSizeMaxTextSize="11sp"
+                        android:autoSizeMinTextSize="9sp"
+                        android:autoSizeStepGranularity="2sp"
+                        android:autoSizeTextType="uniform"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/black"
+                        tools:targetApi="o"
+                        android:gravity="center_vertical"
+                        tools:text="Caribbean Premier League 2021" />
+
+                    <TextView
+                        android:id="@+id/tv_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:autoSizeMaxTextSize="11sp"
+                        android:autoSizeMinTextSize="9sp"
+                        android:autoSizeStepGranularity="2sp"
+                        android:autoSizeTextType="uniform"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/black"
+                        tools:targetApi="o"
+                        android:gravity="center_vertical"
+                        tools:text="Caribbean Premier League 2021" />
+
+
+                    <TextView
+                        android:id="@+id/tv_venue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:autoSizeMaxTextSize="11sp"
+                        android:autoSizeMinTextSize="9sp"
+                        android:autoSizeStepGranularity="2sp"
+                        android:autoSizeTextType="uniform"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/black"
+                        tools:targetApi="o"
+                        tools:text="Caribbean Premier League 2021" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tv_title_toss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/toss"
+            android:fontFamily="@font/montserrat_medium"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+        <TextView
+            android:id="@+id/tv_toss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="3dp"
+            android:text="@string/toss"
+            android:fontFamily="@font/montserrat_regular"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title_toss" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/lblue"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_toss">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/avg_1st_innings"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_first_inning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/montserrat_regular"
+                    tools:text="146" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/avg_2nd_innings"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_second_inning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="15sp"
+                    tools:text="146" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout123"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/highest_total"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_highest_total"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoSizeMaxTextSize="@dimen/_12ssp"
+                    android:autoSizeMinTextSize="@dimen/_10ssp"
+                    android:autoSizeStepGranularity="@dimen/_2ssp"
+                    android:autoSizeTextType="uniform"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textColor="@color/white"
+                    tools:targetApi="o"
+                    tools:text="146" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lowest_total"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_lowest_total"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:autoSizeMaxTextSize="@dimen/_12ssp"
+                    android:autoSizeMinTextSize="@dimen/_10ssp"
+                    android:autoSizeStepGranularity="@dimen/_2ssp"
+                    android:autoSizeTextType="uniform"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/white"
+                    tools:targetApi="o"
+                    tools:text="146" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lblue"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout123">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/highest_chased"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_highest_chased"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:autoSizeMaxTextSize="@dimen/_12ssp"
+                    android:autoSizeMinTextSize="@dimen/_10ssp"
+                    android:autoSizeStepGranularity="@dimen/_2ssp"
+                    android:autoSizeTextType="uniform"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textColor="@color/black"
+                    tools:targetApi="o"
+                    tools:text="146" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lowest_defended"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_lowest_defending"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoSizeMaxTextSize="@dimen/_12ssp"
+                    android:autoSizeMinTextSize="@dimen/_10ssp"
+                    android:autoSizeStepGranularity="@dimen/_2ssp"
+                    android:autoSizeTextType="uniform"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/black"
+                    tools:targetApi="o"
+                    tools:text="146" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_head_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/head_to_head"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:fontFamily="@font/montserrat_regular"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+        <TextView
+            android:id="@+id/tv_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            android:fontFamily="@font/montserrat_regular"
+            app:layout_constraintStart_toStartOf="@+id/tv_head_title"
+            app:layout_constraintTop_toBottomOf="@+id/tv_head_title"
+            tools:text="TKP 3-JS 7" />
+
+
+        <LinearLayout
+            android:id="@+id/extra_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/lblue"
+            android:orientation="vertical"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_head">
+
+
+            <TextView
+                android:id="@+id/tv_teamForm_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="@string/team_form"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <LinearLayout
+                android:id="@+id/teamForm1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tv_team_first_name_short"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="13sp"
+                    tools:text="TKR" />
+
+
+                <TextView
+                    android:id="@+id/form1Team1"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/box_gradient_bg"
+                    android:gravity="center"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/form1Team2"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/box_gradient_bg"
+                    android:gravity="center"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/form1Team3"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/box_gradient_bg"
+                    android:gravity="center"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/form1Team4"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/box_gradient_bg"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/form1Team5"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/box_gradient_bg"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/teamForm2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tv_team_two_name_short"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="13sp"
+                    tools:text="TKR" />
+
+                <TextView
+                    android:id="@+id/form2Team1"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/box_gradient_bg"
+                    android:gravity="center"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    tools:text="W" />
+
+                <TextView
+                    android:id="@+id/form2Team2"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:background="@drawable/box_gradient_bg"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/form2Team3"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:background="@drawable/box_gradient_bg"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/form2Team4"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:background="@drawable/box_gradient_bg"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/form2Team5"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:background="@drawable/box_gradient_bg"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_umpire_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/umpire"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_third_umpire_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/third_umpire"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_refree_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/refree"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_mom_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/man_of_the_match"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_umpire"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/tv_third_umpire"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/tv_refree"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="" />
+
+
+                    <TextView
+                        android:id="@+id/tv_mom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

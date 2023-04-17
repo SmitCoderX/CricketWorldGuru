@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_image"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+           android:id="@+id/linearMatchHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/_250sdp"
+            android:orientation="vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/lblMatchHistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/match_history"
+                android:textSize="@dimen/_14ssp"
+                android:fontFamily="@font/roboto"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:background="@color/tv_color"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewMatchHistory"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:listitem="@layout/row_match_history_list_item"
+                android:overScrollMode="never" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/lblNoMatchHistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/match_histroy_not_found"
+                android:textSize="@dimen/_14ssp"
+                android:fontFamily="@font/roboto_light"
+                android:textStyle="normal"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+           android:id="@+id/linearSessionHistory"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/lblSessionHistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/match_history"
+                android:textSize="@dimen/_14ssp"
+                android:fontFamily="@font/roboto"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:background="@color/tv_color"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewSessionHistory"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:listitem="@layout/row_history_list" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/lblNoSessionHistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/session_histroy_not_found"
+                android:textSize="@dimen/_14ssp"
+                android:fontFamily="@font/roboto_light"
+                android:textStyle="normal"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/co_party"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+      <!--  <TextView
+            android:id="@+id/tv_noActiveMatch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/there_is_no_partyInfo_found"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/rv_party"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />-->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

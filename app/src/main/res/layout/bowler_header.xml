@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/round_rect"
+    android:backgroundTint="@color/purple_200"
+    android:orientation="horizontal"
+    android:paddingHorizontal="5dp"
+    android:paddingVertical="10dp"
+    android:weightSum="6">
+
+    <TextView
+        android:id="@+id/tv_bowler_name"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:autoSizeMaxTextSize="17sp"
+        android:autoSizeMinTextSize="12sp"
+        android:autoSizeStepGranularity="2sp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/montserrat_medium"
+        android:includeFontPadding="false"
+        android:text="@string/bowler"
+        android:textColor="@color/white"
+        tools:targetApi="o" />
+
+    <TextView
+        android:id="@+id/tv_over"
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".7"
+        android:autoSizeMaxTextSize="17sp"
+        android:autoSizeMinTextSize="12sp"
+        android:autoSizeStepGranularity="2sp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/montserrat_medium"
+        android:includeFontPadding="false"
+        android:text="O"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        tools:targetApi="o" />
+
+    <TextView
+        android:id="@+id/tv_maiden"
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".5"
+        android:autoSizeMaxTextSize="17sp"
+        android:autoSizeMinTextSize="12sp"
+        android:autoSizeStepGranularity="2sp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/montserrat_medium"
+        android:includeFontPadding="false"
+        android:text="M"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        tools:targetApi="o" />
+
+    <TextView
+        android:id="@+id/tv_runs"
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".5"
+        android:autoSizeMaxTextSize="17sp"
+        android:autoSizeMinTextSize="12sp"
+        android:autoSizeStepGranularity="2sp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/montserrat_medium"
+        android:includeFontPadding="false"
+        android:text="@string/r"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        tools:targetApi="o" />
+
+    <TextView
+        android:id="@+id/tv_wicket"
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".5"
+        android:autoSizeMaxTextSize="17sp"
+        android:autoSizeMinTextSize="12sp"
+        android:autoSizeStepGranularity="2sp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/montserrat_medium"
+        android:includeFontPadding="false"
+        android:text="W"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        tools:targetApi="o" />
+
+    <TextView
+        android:id="@+id/tv_er"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_weight=".7"
+        android:autoSizeMaxTextSize="17sp"
+        android:autoSizeMinTextSize="12sp"
+        android:autoSizeStepGranularity="2sp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/montserrat_medium"
+        android:includeFontPadding="false"
+        android:text="ER"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        tools:targetApi="o" />
+
+</LinearLayout>

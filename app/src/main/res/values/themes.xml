@@ -1,0 +1,36 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.CricketGuru" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Secondary brand color. -->
+        <item name="android:windowBackground">@drawable/bg_image</item>
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" >@color/purple_700</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="MyCustomTabTextAppearanceHome" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textSize">@dimen/_9ssp</item>
+        <item name="android:textColor">@drawable/tab_color_selector_home</item>
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+    </style>
+
+    <style name="Theme.MyFancyTheme" parent="android:Theme.Holo">
+        <item name="titleCentered">true</item>
+        <item name="android:homeAsUpIndicator">@color/white</item>
+    </style>
+
+    <style name="tab_text" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+    </style>
+
+
+
+</resources>

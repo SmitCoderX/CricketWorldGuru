@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:layout_weight="6"
+
+    android:background="@drawable/trans_round_rect_border"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/tv_bowler_name"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:autoSizeMaxTextSize="@dimen/_11ssp"
+        android:autoSizeMinTextSize="@dimen/_9ssp"
+        android:autoSizeStepGranularity="@dimen/_2ssp"
+        android:autoSizeTextType="uniform"
+
+        android:maxLines="1"
+        android:text="@string/test_name"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat_regular"
+        android:includeFontPadding="false"
+        tools:targetApi="o" />
+
+    <TextView
+        android:id="@+id/tv_over"
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".7"
+        android:autoSizeMaxTextSize="@dimen/_11ssp"
+        android:autoSizeMinTextSize="@dimen/_9ssp"
+        android:autoSizeStepGranularity="@dimen/_2ssp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/montserrat_regular"
+        android:includeFontPadding="false"
+        android:text="@string/_3"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        tools:targetApi="o" />
+
+    <TextView
+        android:id="@+id/tv_maiden"
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".5"
+        android:autoSizeMaxTextSize="@dimen/_11ssp"
+        android:autoSizeMinTextSize="@dimen/_9ssp"
+        android:autoSizeStepGranularity="@dimen/_2ssp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/montserrat_regular"
+        android:includeFontPadding="false"
+        android:text="@string/_3"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_bowler_name"
+        app:layout_constraintEnd_toStartOf="@+id/tv_runs"
+        app:layout_constraintTop_toTopOf="@+id/tv_bowler_name"
+        tools:targetApi="o" />
+
+    <TextView
+        android:id="@+id/tv_runs"
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".5"
+        android:autoSizeMaxTextSize="@dimen/_11ssp"
+        android:autoSizeMinTextSize="@dimen/_9ssp"
+        android:autoSizeStepGranularity="@dimen/_2ssp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/montserrat_regular"
+        android:includeFontPadding="false"
+        android:text="@string/_3"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_bowler_name"
+        app:layout_constraintEnd_toStartOf="@+id/tv_wicket"
+        app:layout_constraintTop_toTopOf="@+id/tv_bowler_name"
+        tools:targetApi="o" />
+
+    <TextView
+        android:id="@+id/tv_wicket"
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".5"
+        android:autoSizeMaxTextSize="@dimen/_11ssp"
+        android:autoSizeMinTextSize="@dimen/_9ssp"
+        android:autoSizeStepGranularity="@dimen/_2ssp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/montserrat_regular"
+        android:includeFontPadding="false"
+        android:text="@string/_3"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_bowler_name"
+        app:layout_constraintEnd_toStartOf="@+id/tv_er"
+        app:layout_constraintTop_toTopOf="@+id/tv_bowler_name"
+        tools:targetApi="o" />
+
+    <TextView
+        android:id="@+id/tv_er"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_weight=".7"
+        android:autoSizeMaxTextSize="@dimen/_11ssp"
+        android:autoSizeMinTextSize="@dimen/_9ssp"
+        android:autoSizeStepGranularity="@dimen/_2ssp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/montserrat_regular"
+        android:includeFontPadding="false"
+        android:text="@string/_3"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        tools:targetApi="o" />
+
+</LinearLayout>

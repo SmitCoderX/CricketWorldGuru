@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="10dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_marginVertical="5dp"
+    app:cardCornerRadius="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:padding="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_series_Image"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:clipToOutline="true"
+            android:contentDescription="@string/team_image"
+            android:src="@drawable/imgpsh_fullsize_anim"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:targetApi="s" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_seriesName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_5sdp"
+            android:autoSizeMaxTextSize="@dimen/_12ssp"
+            android:autoSizeMinTextSize="@dimen/_10ssp"
+            android:gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:autoSizeStepGranularity="@dimen/_2ssp"
+            android:autoSizeTextType="uniform"
+            android:textColor="@color/purple_500"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:fontFamily="@font/montserrat_regular"
+            app:layout_constraintEnd_toStartOf="@+id/iv_details"
+            app:layout_constraintStart_toEndOf="@id/iv_series_Image"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:targetApi="o"
+            tools:text="India Tour 2023" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_total_matches_Dates"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                tools:text="34 Matches * 04 Mar - 26 Mar 2023"
+                android:layout_marginHorizontal="@dimen/_5sdp"
+                android:textColor="@color/gray"
+                android:gravity="center_vertical"
+                android:autoSizeMaxTextSize="@dimen/_9ssp"
+                android:autoSizeMinTextSize="@dimen/_7ssp"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:autoSizeStepGranularity="@dimen/_2ssp"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="@font/montserrat_regular"
+                app:layout_constraintTop_toBottomOf="@id/tv_seriesName"
+                app:layout_constraintStart_toEndOf="@id/iv_series_Image"
+                app:layout_constraintEnd_toStartOf="@id/iv_details"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:ignore="UnusedAttribute" />
+
+        <ImageView
+            android:id="@+id/iv_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rotation="270"
+            android:contentDescription="@string/open"
+            app:tint="@color/purple_500"
+            android:src="@drawable/ic_down_arrow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

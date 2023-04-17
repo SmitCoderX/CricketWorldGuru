@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gradient_bg"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="@dimen/_5sdp"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/_5sdp"
+        android:paddingEnd="@dimen/_5sdp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txtTeamNameMatchHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="normal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txtDateMatchHistory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="normal" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txtMatchTypeMatchHistory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="normal"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgUndoMatchHistory"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_weight="0.1"
+        android:contentDescription="@string/undo"
+        android:src="@drawable/ic_undo"
+        app:tint="@color/white" />
+
+    <ImageView
+        android:id="@+id/imgDeleteMatchHistory"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_weight="0.1"
+        android:contentDescription="@string/delete"
+        android:src="@drawable/ic_delete"
+        app:tint="@color/white" />
+</LinearLayout>

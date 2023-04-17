@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "589176630693",
+    "firebase_url": "https://cricket-hisabkitab.firebaseio.com",
+    "project_id": "cricket-hisabkitab",
+    "storage_bucket": "cricket-hisabkitab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:589176630693:android:563a2a5d6c020125620c4c",
+        "android_client_info": {
+          "package_name": "com.rudrainfotech.cricketworldguru"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "589176630693-pgt2nr40hkmf2gb00pht2qi3o0t81ei2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2t5CkZc34TS8Sat8KjJU063URCAGxTwY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "589176630693-pgt2nr40hkmf2gb00pht2qi3o0t81ei2.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "589176630693-c5vo3ahvv5j6u52pnh9q8pp87flcs160.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.wedoapps.ioskhailagai"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="@dimen/_5sdp"
+    android:orientation="horizontal"
+    android:background="@drawable/trans_round_rect_border"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="5dp"
+    android:weightSum="6">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_team_img"
+        android:layout_width="@dimen/_15sdp"
+        android:layout_height="@dimen/_15sdp"
+        android:layout_gravity="center"
+        android:layout_weight=".5"
+        tools:src="@mipmap/ic_launcher_round"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_pt_teamName"
+        android:layout_width="52dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:fontFamily="@font/montserrat_regular"
+        android:includeFontPadding="false"
+        android:autoSizeMaxTextSize="@dimen/_10ssp"
+        android:autoSizeMinTextSize="@dimen/_8ssp"
+        android:autoSizeStepGranularity="@dimen/_2ssp"
+        android:autoSizeTextType="uniform"
+        tools:text="Team Name"
+        tools:ignore="UnusedAttribute" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_pt_played"
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".5"
+        android:fontFamily="@font/montserrat_regular"
+        android:includeFontPadding="false"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        tools:text="@string/p" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_pt_won"
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".5"
+        android:fontFamily="@font/montserrat_regular"
+        android:includeFontPadding="false"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        tools:text="@string/w" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_pt_lost"
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".5"
+        android:fontFamily="@font/montserrat_regular"
+        android:includeFontPadding="false"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        tools:text="@string/l" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_pt_tied"
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".5"
+        android:fontFamily="@font/montserrat_regular"
+        android:includeFontPadding="false"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        tools:text="@string/nr" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_pt_points"
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".8"
+        android:fontFamily="@font/montserrat_regular"
+        android:includeFontPadding="false"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        tools:text="@string/pts" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_pt_rate"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/montserrat_regular"
+        android:includeFontPadding="false"
+        android:gravity="center"
+        android:autoSizeMaxTextSize="@dimen/_10ssp"
+        android:autoSizeMinTextSize="@dimen/_8ssp"
+        android:autoSizeStepGranularity="@dimen/_2ssp"
+        android:autoSizeTextType="uniform"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        tools:text="@string/nrr"
+        tools:targetApi="o" />
+
+</LinearLayout>

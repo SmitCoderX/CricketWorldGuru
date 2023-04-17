@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cardview_light_background"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/lblDeclareSession"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:text="@string/declare_session"
+            android:textAllCaps="true"
+            android:textColor="@color/dark_blue"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="normal" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/lblTitleDeclareSession"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:fontFamily="@font/roboto_light"
+            android:text="@string/enter_final_run"
+            android:textColor="@color/dark_blue"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="normal" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputEdtAmountDeclareSession"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@drawable/round_rect"
+            android:backgroundTint="@color/blue"
+            android:focusable="true"
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="3"
+            android:maxLines="1"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="0dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"
+            android:textColorHint="@color/teal_200"
+            android:textCursorDrawable="@drawable/cursor_edittext"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="normal"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/lblFinalAmountDeclareSession"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:fontFamily="@font/roboto_light"
+            android:text="@string/final_amount"
+            android:textColor="@color/dark_blue"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="normal" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txtFinalAmountDeclareSession"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:fontFamily="@font/roboto"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/_22ssp"
+            android:textStyle="normal" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txtAddMsgDeclareSession"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:autoLink="none|web|phone"
+            android:background="@color/cardview_dark_background"
+            android:fontFamily="@font/roboto"
+            android:linksClickable="true"
+            android:maxLines="5"
+            android:text=""
+            android:textColor="@color/dark_blue"
+            android:textColorLink="@color/white"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="normal" />
+
+        <LinearLayout
+            android:id="@+id/linearBtnDeclareSession"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end|center_vertical">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCancelDeclareSession"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:text="@string/cancel"
+                android:textAllCaps="true"
+                android:fontFamily="@font/roboto_light"
+                android:textSize="@dimen/_15ssp"
+                android:textAppearance="@style/Theme.MaterialComponents.Light.Bridge"
+                android:textColor="@color/dark_blue" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnDeclareSession"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:fontFamily="@font/roboto"
+                android:textSize="@dimen/_15ssp"
+                android:text="@string/declare"
+                android:textAllCaps="true"
+                android:textAppearance="@style/Theme.MaterialComponents.Light.DarkActionBar"
+                android:textColor="#283593" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>
